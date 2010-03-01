@@ -25,7 +25,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=QtCurve-KDE3
-VERSION=${VERSION:-0.68.0}
+VERSION=${VERSION:-1.1.1}
 ARCH=${ARCH:-i486}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -63,16 +63,20 @@ find . \
 
 mkdir build 
 cd build
-  cmake \
-    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DLIB_SUFFIX=${LIBDIRSUFFIX} \
-    -DMAN_INSTALL_DIR=/usr/man \
-    -DCMAKE_BUILD_TYPE=Release ..
+cmake \
+  -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+  -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DLIB_SUFFIX=${LIBDIRSUFFIX} \
+  -DQT_PLUGINS_DIR=/usr/lib/qt/plugins \
+  -DMAN_INSTALL_DIR=/usr/man \
+  -DQTC_DEFAULT_TO_KDE3=true \
+  -DQTC_STYLE_SUPPORT=true \
+  -DCMAKE_BUILD_TYPE=Release \
+  ..
 
-  make VERBOSE=1
-  make install VERBOSE=1 DESTDIR=$PKG
+make VERBOSE=1
+make install VERBOSE=1 DESTDIR=$PKG
 cd -
 
 ( cd $PKG
@@ -98,4 +102,4 @@ if [ "$1" = "--cleanup" ]; then
   rm -rf $PKG
 fi
 
-#vim: et ts=2 sw=2
+# vim: et ts=2 sw=2
