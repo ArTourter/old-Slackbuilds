@@ -1,0 +1,18 @@
+GraphicsMagick (GraphicsMagick Image Processing System)
+ 
+GraphicsMagick is the swiss army knife of image processing. it 
+provides a robust and efficient collection of tools and libraries
+which support reading, writing, and manipulating an image in over 88 
+major formats.
+
+Image processing can multi-threaded using OpenMP (GCC 4.2 or later) so
+that CPU-bound tasks scale linearly as processor cores are added. However
+OpenMP is disabled by default in the package due to a bug in GCC 4.2
+which make perl binding and other bindings not work. Openmp can be enabled
+by giving the option OPENMP=yes to the build script.
+
+Support for JPEG-2000 requires JasPer. Other additional optional
+requirements can be found at
+http://www.graphicsmagick.org/README.html#add-on-libraries-programs
+
+Homepage: http://www.graphicsmagick.org/

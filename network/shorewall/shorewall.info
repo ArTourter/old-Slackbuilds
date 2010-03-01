@@ -1,0 +1,14 @@
+PRGNAM="shorewall"
+VERSION="4.4.5.2"
+HOMEPAGE="http://www.shorewall.net"
+DOWNLOAD="http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.5/base/shorewall-4.4.5.tar.bz2 \
+	http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.5/patch-4.4.5.1 \
+	http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.5/patch-4.4.5.2"
+MD5SUM="21177f36e2273a7f53a3e868ea658393 \
+	c65312dc14c1b00dd78277f167614a62 \
+	8fc792a9a44952c040709fa6596f5979"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+MAINTAINER="ArTourter"
+EMAIL="artourter@gmail.com"
+APPROVED=""

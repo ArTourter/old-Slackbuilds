@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+       |-----handy-ruler------------------------------------------------------|
+mailman: Mailman (the GNU Mailing List Manager)
+mailman: 
+mailman: Mailman is free software for managing electronic mail discussion and
+mailman: e-newsletter lists. Mailman integrated web interface, makes it easy
+mailman: for users to manage their accounts & for list owners to administer
+mailman: their lists. Mailman supports built-in archiving, automatic bounce
+mailman: processing, content filtering, digest delivery, spam filters, & more.
+mailman: 
+mailman: Mailman is free software, distributed under the GNU General Public
+mailman: License. Mailman is written in the Python programming language, with
+mailman: a little bit of C code for security.

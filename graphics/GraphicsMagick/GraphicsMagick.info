@@ -1,0 +1,7 @@
+PRGNAM="GraphicsMagick"
+VERSION="1.3.5"
+HOMEPAGE="http://www.graphicsmagick.org/"
+DOWNLOAD="http://downloads.sourceforge.net/graphicsmagick/GraphicsMagick-1.3.5.tar.bz2"
+MD5SUM="695d94588437ef3a12b971d7ab672d8f"
+MAINTAINER="ArTourter"
+EMAIL="artourter@gmail.com"

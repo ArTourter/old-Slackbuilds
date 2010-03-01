@@ -1,0 +1,11 @@
+SWFTools (SWF manipulation and generation utilities)
+
+SWF Tools is a collection of SWF manipulation and creation utilities
+written by Rainer Böhme and Matthias Kramm. It is released under the
+GPL.
+Included are:  
+
+PDF2SWF, SWFCombine, SWFStrings, SWFDumps, JPEG2SWF, PNG2SWF, GIF2SWF
+WAV2SWF, AVI2SWF, Font2SWF, SWFBBox, SWFC, SWFExtract, RFXSWF library
+
+

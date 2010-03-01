@@ -1,0 +1,7 @@
+PRGNAM="swftools"
+VERSION="0.8.1"
+HOMEPAGE="http://www.swftools.org"
+DOWNLOAD="http://www.swftools.org/swftools-0.8.1.tar.gz"
+MD5SUM="932f4e5fce551ed70c0390fdc0eb1af6"
+MAINTAINER="ArTourter"
+EMAIL="artourter@gmail.com"
