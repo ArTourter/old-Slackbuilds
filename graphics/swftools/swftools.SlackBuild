@@ -25,7 +25,7 @@
 
 # Set initial variables
 PRGNAM=swftools
-VERSION=${VERSION:-0.8.1}
+VERSION=${VERSION:-0.9.0}
 ARCH=${ARCH:-i486}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
