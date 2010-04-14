@@ -27,7 +27,7 @@
 # Ported from 12.1 repository; now only Skype 2.0 compatible
 
 PRGNAM=skype
-VERSION=2.1.0.47
+VERSION=2.1.0.81
 ARCH=i486 # leave this alone
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -60,8 +60,8 @@ cp skype.desktop $PKG/usr/share/applications/skype.desktop
 cp icons/SkypeBlue_48x48.png $PKG/usr/share/pixmaps/skype.png
 cp skype.conf $PKG/etc/dbus-1/system.d/skype.conf.new
 
-find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+#find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+#  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSE README $PKG/usr/doc/$PRGNAM-$VERSION
