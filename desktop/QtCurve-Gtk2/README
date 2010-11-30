@@ -5,6 +5,11 @@ settings so any KDE font/colour changes will also affect your GTK apps.
 
 If you want Gtk2 apps to use the theme system wide, create a symbolic link to the new 
 theme like this:
-  ln -s /usr/share/themes/QtCurve/gtk-2.0/gtkrc /etc/gtk-2.0/*-slackware-linux/gtkrc
+  ln -s /usr/share/themes/QtCurve/gtk-2.0/gtkrc /etc/gtk-2.0/gtkrc
+
+Note that in Slackware 13.1 KDE and gtk assumes different things. KDE will override the
+PATH in which gtk apps looks for the rc file and make them look in /etc/gtk-2.0/gtkrc.
+However if you are not using KDE you should use the /etc/gtk-2.0/*-slackware-linux/gtkrc
+PATH instead as this is where gtk apps looks for by default.
 
 Alternatively, gtk-chtheme (also available as a slackbuild) works fine on a per user basis.
