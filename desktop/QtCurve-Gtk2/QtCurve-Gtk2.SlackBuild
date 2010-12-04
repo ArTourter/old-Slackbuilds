@@ -59,6 +59,18 @@ else
     SLKCFLAGS="-O2"
     LIBDIRSUFFIX=""
 fi
+
+# Configure QtCurve-Gtk2 not to modify userchrome.css for firefox.
+# This seems to be required when using a dark Theme, the font colour would not
+# be inverted and therefore unreadable.
+# Reported and requested by NaCL
+
+if [ "${USERCHROME:-yes}" = "no" ]; then
+  modif_mozilla="-DQTC_MODIFY_MOZILLA=false"
+else
+  modif_mozilla=""
+fi
+
 set -e
 
 rm -rf $PKG $TMP/$PRGNAM-$VERSION
@@ -84,6 +96,7 @@ cd build
     -DQTC_DEFAULT_TO_KDE3=false \
     -DCMAKE_BUILD_TYPE=Release \
     -DQTC_STYLE_SUPPORT=true \
+    $modif_mozilla \
     ..
 
   make

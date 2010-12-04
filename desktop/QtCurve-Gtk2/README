@@ -3,13 +3,19 @@ This is a set of widget styles for Gtk2 based apps.
 The fonts and colours for the GTK themes will be read in from your Qt 
 settings so any KDE font/colour changes will also affect your GTK apps.
 
-If you want Gtk2 apps to use the theme system wide, create a symbolic link to the new 
-theme like this:
+If you want Gtk2 apps to use the theme system wide, create a symbolic
+link to the new theme like this:
   ln -s /usr/share/themes/QtCurve/gtk-2.0/gtkrc /etc/gtk-2.0/gtkrc
 
-Note that in Slackware 13.1 KDE and gtk assumes different things. KDE will override the
-PATH in which gtk apps looks for the rc file and make them look in /etc/gtk-2.0/gtkrc.
-However if you are not using KDE you should use the /etc/gtk-2.0/*-slackware-linux/gtkrc
-PATH instead as this is where gtk apps looks for by default.
+Note that in Slackware 13.1, KDE and GTK assume different things.  The GTK+2
+package is compiled to use /etc/gtk-2.0/*-slackware-linux/gtkrc, while KDE
+is hardcoded to look in /etc/gtk-2.0/gtkrc.  Consequently, you will probably
+want to put your preferred gtkrc in the GTK path, and then put a symlink to
+it at /etc/gtk-2.0/gtkrc for KDE to use (or vice versa - either will work).
 
-Alternatively, gtk-chtheme (also available as a slackbuild) works fine on a per user basis.
+Alternatively, gtk-chtheme works fine on a per user basis.
+
+You can disable the feature which modifies firefox's userchrome.css by passing
+a variable to the script. This seems to be required when using a dark theme
+where firefox would not invert the font colour making them unreadable.
+USERCHROME=yes|no (default: yes)
