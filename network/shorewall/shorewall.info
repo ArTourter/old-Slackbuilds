@@ -7,7 +7,7 @@ DOWNLOAD="http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.15/base/shore
 	http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.15/patch-4.4.15.3"
 MD5SUM="e41f8fd5e447c6cf8566c3f062bbb8d9 \
 	54e32c7daf0ed247946ca2dc014f72b4 \
-	164318dbcca03b2a45beddf52f28afb5
+	164318dbcca03b2a45beddf52f28afb5 \
 	e02b314a4b420fd0563cb167856660c0"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
