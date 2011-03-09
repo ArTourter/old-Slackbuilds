@@ -1,0 +1,8 @@
+PRGNAM="kbibtex"
+VERSION="0.3_beta1"
+HOMEPAGE="http://home.gna.org/kbibtex/"
+DOWNLOAD="http://download.gna.org/kbibtex/0.3/kbibtex-0.3-beta1.tar.bz2"
+MD5SUM="785b90c39926a837c8e93545395476b7"
+MAINTAINER="Ar Tourter"
+EMAIL="artourter@gmail.com"
+APPROVED=""
