@@ -1,8 +1,10 @@
 PRGNAM="shorewall"
-VERSION="4.4.23"
+VERSION="4.4.23.1"
 HOMEPAGE="http://www.shorewall.net"
-DOWNLOAD="http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.23/base/shorewall-4.4.23.tar.bz2"
-MD5SUM="bb9fc6fb8b9b958f95e3c30a5e06ca97"
+DOWNLOAD="http://www.shorewall.net/pub/shorewall/4.4/shorewall-4.4.23/base/shorewall-4.4.23.tar.bz2 \
+	http://shorewall.net/pub/shorewall/4.4/shorewall-4.4.23/patch-4.4.23.1"
+MD5SUM="bb9fc6fb8b9b958f95e3c30a5e06ca97 \
+	e0718f904675345edaae25a096869de9"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 MAINTAINER="ArTourter"
