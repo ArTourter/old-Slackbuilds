@@ -2,9 +2,7 @@ KBibTeX is a BibTeX editor for KDE to edit bibliographies used with
 LaTeX. KBibTeX is released under the GNU Public License (GPL) version 2
 or any later version.
 
-KBibTeX for KDE 4 is currently under development. KBibTeX for KDE 4 is
+KBibTeX for KDE 4 is currently under development. KBibTeX for KDE 4 is
 mature for most daily tasks, but still lacks some features. It is 
 recommended that you make backups of all your files before editing
-them with KBibTeX for KDE 4.
-
-Homepage: http://home.gna.org/kbibtex/
+them with KBibTeX for KDE 4.

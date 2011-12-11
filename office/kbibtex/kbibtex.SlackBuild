@@ -28,12 +28,10 @@ VERSION=${VERSION:-0.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-# Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
     arm*) ARCH=arm ;;
-# Unless $ARCH is already set, use uname -m for all other archs:
        *) ARCH=$( uname -m ) ;;
   esac
 fi
@@ -84,34 +82,24 @@ cd build
     -Wno-dev \
     ..
 
-  make || make -j1 
+  make -j1 
   make install DESTDIR=$PKG
 cd ..
 
-# Strip binaries and libraries
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-# Compress man pages
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 
-# Copy program documentation into the package
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   README LICENSE TODO \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
-# Copy the slack-desc (and a custom doinst.sh if necessary) into ./install
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
-
-# Clean up the extra stuff:
-if [ "$1" = "--cleanup" ]; then
-  rm -rf $TMP/$PRGNAM-$BASEVERS
-  rm -rf $PKG
-fi
