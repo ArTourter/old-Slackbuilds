@@ -15,5 +15,5 @@ shorewall: router / server, or on a standalone GNU/Linux system.
 shorewall: This package contains common files required by both the 
 shorewall: shorewall-perl and shorewall-shell compilers for Shoreline.
 shorewall:
+shorewall: This package is the IPv4 component of the firewall.
 shorewall: http://www.shorewall.net/
-shorewall:
