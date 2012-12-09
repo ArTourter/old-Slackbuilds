@@ -5,7 +5,7 @@
 # make exactly 11 lines for the formatting to be correct.  It's also
 # customary to leave one space after the ':'.
 
-         |-----handy-ruler---------------------------------------------|
+              |-----handy-ruler------------------------------------------------------|
 shorewall-core: Shorewall-core (Iptables Made Easy)
 shorewall-core:
 shorewall-core: The Shoreline Firewall, more commonly known as "Shorewall",
@@ -13,7 +13,7 @@ shorewall-core: is a Netfilter (iptables) based firewall that can be used on
 shorewall-core: a dedicated firewall system, a multi-function gateway / 
 shorewall-core: router / server, or on a standalone GNU/Linux system.
 shorewall-core: This package contains common files required by both the 
-shorewall-core: shorewall and shorewall6 components of Shorewall
+shorewall-core: shorewall and shorewall6 components of Shorewall.
 shorewall-core:
-shorewall-core: http://www.shorewall.net/
+shorewall-core: http://www.shorewall.net
 shorewall-core:

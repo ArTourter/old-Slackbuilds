@@ -24,12 +24,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=shorewall-core
-VERSION=${VERSION:-4.5.6}
-ARCH=noarch
+VERSION=${VERSION:-4.5.10}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-BASEVERS=4.5.6
+BASEVERS=4.5.10
+
+ARCH=noarch
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}
@@ -62,10 +63,6 @@ DESTDIR=$PKG \
   mv rc.firewall rc.firewall.new
 )
 
-mkdir -p $PKG/var/lock/subsys
-#chmod 0755 $PKG/usr/share/shorewall $PKG/var/lock/subsys
-#chmod 0644 $PKG/etc/shorewall/* $PKG/etc/rc.d/*
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
   COPYING INSTALL changelog.txt releasenotes.txt known_problems.txt  \
@@ -75,7 +72,6 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
-
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
