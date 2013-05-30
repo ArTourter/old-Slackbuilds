@@ -82,7 +82,7 @@ cd build
     -Wno-dev \
     ..
 
-  make -j1 
+  make || make -j1 
   make install DESTDIR=$PKG
 cd ..
 
