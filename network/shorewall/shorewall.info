@@ -3,7 +3,7 @@ VERSION="4.5.17.1"
 HOMEPAGE="http://www.shorewall.net"
 DOWNLOAD="http://www.shorewall.net/pub/shorewall/4.5/shorewall-4.5.17/base/shorewall-4.5.17.tar.bz2
 	http://www.shorewall.net/pub/shorewall/4.5/shorewall-4.5.17/patch-4.5.17.1"
-MD5SUM=8f79f3f782f7a45017d6dd60ff8c0646
+MD5SUM="8f79f3f782f7a45017d6dd60ff8c0646
 	b1128afc53454337df279483c4b992e1"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
