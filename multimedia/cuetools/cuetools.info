@@ -1,6 +1,6 @@
 PRGNAM="cuetools"
 VERSION="1.4.0"
-HOMEPAGE="http://developer.berlios.de/projects/cuetools/"
+HOMEPAGE="https://github.com/svend/cuetools"
 DOWNLOAD="https://github.com/svend/cuetools/archive/1.4.0.tar.gz"
 MD5SUM="4492dae2b3f9e077f6455a1f1cddef3b"
 DOWNLOAD_x86_64=""
