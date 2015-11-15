@@ -17,7 +17,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=cuetools
-VERSION=${VERSION:-1.4.0}
+VERSION=${VERSION:-1.4.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -63,16 +63,6 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Patching the cuetag script in extras with patch from Archlinux
-# Thanks to Gilcio Amaral-Martins <gilcio.amaral@gmail.com> for the suggestion
-# patch -Np0 < $CWD/cuetag.patch
-#   sed -i -e 's/--import-vc-from/--import-tags-from/' \
-#     -e 's/--remove-vc-all/--remove-all-tags/' extras/cuetag.sh
-
-# Patching with patches from Archlinux
-patch -Np1 < "$CWD/fix_build_with_automake-1.12.diff"
-patch -Np1 < "$CWD/cuetag-fix_spaces.diff"
-
 aclocal
 autoheader
 automake --force-missing --add-missing
@@ -101,7 +91,7 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  AUTHORS ChangeLog COPYING NEWS README TODO \
+  AUTHORS ChangeLog COPYING NEWS README.md TODO \
     $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
