@@ -1,12 +1,8 @@
 PRGNAM="shorewall6"
-VERSION="5.0.7.2"
+VERSION="5.0.8"
 HOMEPAGE="http://www.shorewall.net"
-DOWNLOAD="http://www.shorewall.net/pub/shorewall/5.0/shorewall-5.0.7/base/shorewall6-5.0.7.tar.bz2 \
-	http://shorewall.net/pub/shorewall/5.0/shorewall-5.0.7/patch-6-5.0.7.1 \
-	http://shorewall.net/pub/shorewall/5.0/shorewall-5.0.7/patch-6-5.0.7.2"
-MD5SUM="550ef06c071577e9559c9479d17defcb \
-	5918e843bea133d058372afc360cd5ea \
-	1fd87e5a42336c51b456edde4cd9c068"
+DOWNLOAD="http://www.shorewall.net/pub/shorewall/5.0/shorewall-5.0.8/base/shorewall6-5.0.8.tar.bz2"
+MD5SUM="cddf99d6063087960e162c6c9aab837b"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="shorewall-core"
